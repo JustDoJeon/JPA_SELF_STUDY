@@ -19,13 +19,10 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member1 = new Member(150L,"A");
-            Member member2 = new Member(160L,"B");
+            Member member = new Member();
 
-            em.persist(member1);
-            em.persist(member2);
-
-            System.out.println("==========================");
+            member.setUsername("jpaa2a");
+            em.persist(member);
 
             tx.commit();
         } catch (Exception e) {
