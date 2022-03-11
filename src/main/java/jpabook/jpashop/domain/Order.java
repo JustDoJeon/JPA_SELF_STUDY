@@ -11,8 +11,8 @@ import java.util.List;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name ="ORDER_ID")
+    @GeneratedValue
+    @Column(name = "ORDER_ID")
     private Long id;
 
     @ManyToOne
@@ -20,7 +20,7 @@ public class Order {
     private Member member;
 
     @OneToOne
-    @JoinColumn(name ="DELIVERY_ID")
+    @JoinColumn(name = "DELIVERY_ID")
     private Delivery delivery;
 
     @OneToMany(mappedBy = "order")
@@ -31,12 +31,13 @@ public class Order {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-//    public void addOrderItem(OrderItem orderItem) {
-//        orderItems.add(orderItem);
-//        orderItem.setOrder(this);
-//    }
+    public void addOrderItem(OrderItem orderItem) {
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+    }
 
-    public List<Member> members = new ArrayList<Member>();
+
+//    public List<Member> members = new ArrayList<Member>();
 
     public Long getId() {
         return id;
@@ -54,6 +55,30 @@ public class Order {
         this.member = member;
     }
 
+    public Delivery getDelivery() {
+        return delivery;
+    }
+
+    public void setDelivery(Delivery delivery) {
+        this.delivery = delivery;
+    }
+
+    public List<OrderItem> getOrderItems() {
+        return orderItems;
+    }
+
+    public void setOrderItems(List<OrderItem> orderItems) {
+        this.orderItems = orderItems;
+    }
+
+    public LocalDateTime getOrderdate() {
+        return orderdate;
+    }
+
+    public void setOrderdate(LocalDateTime orderdate) {
+        this.orderdate = orderdate;
+    }
+
     public OrderStatus getStatus() {
         return status;
     }
@@ -61,14 +86,5 @@ public class Order {
     public void setStatus(OrderStatus status) {
         this.status = status;
     }
-
-    public List<Member> getMembers() {
-        return members;
-    }
-
-    public void setMembers(List<Member> members) {
-        this.members = members;
-    }
-
 
 }
