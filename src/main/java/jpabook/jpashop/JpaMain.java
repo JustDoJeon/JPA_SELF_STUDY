@@ -24,10 +24,7 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Book book = new Book();
-            book.setName("JPA");
-            book.setAuthor("김영한");
-            em.persist(book);
+           Member member = em.find(Member.class, 1L);
 
             tx.commit();
         } catch (Exception e) {
@@ -37,4 +34,8 @@ public class JpaMain {
         }
         emf.close();
     }
+
+
+
+
 }
