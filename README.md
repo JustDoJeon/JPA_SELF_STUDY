@@ -11,4 +11,5 @@
 - [ 다양한 연관관계 매핑 ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-9/)
 - [ 상속관계 매핑 ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-10/)
 - [ 프록시와 영속성 컨텍스트 ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-11/)
-- [즉시로딩과 지연로딩]
+- [즉시로딩과 지연로딩](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-12/)
+- [ 영속성 전이 : CASCADE ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-13/)
