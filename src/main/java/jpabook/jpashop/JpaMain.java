@@ -21,10 +21,12 @@ public class JpaMain {
 
         //JPA의 모든 데이터 변경은 트랜잭션에서 움직여야함 중요! 그러므로 데이터변경은 트랜잭션안에서 실행해야함
         EntityTransaction tx = em.getTransaction();
+
+
         tx.begin();
 
         try {
-           Member member = em.find(Member.class, 1L);
+            Member member = em.find(Member.class, 1L);
 
             tx.commit();
         } catch (Exception e) {
@@ -34,8 +36,6 @@ public class JpaMain {
         }
         emf.close();
     }
-
-
 
 
 }
