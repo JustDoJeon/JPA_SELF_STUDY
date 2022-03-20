@@ -13,3 +13,5 @@
 - [ 프록시와 영속성 컨텍스트 ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-11/)
 - [즉시로딩과 지연로딩](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-12/)
 - [ 영속성 전이 : CASCADE ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-13/)
+- [ JPQL (1) ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-15/)
+- [ JPQL 기본문법과 API ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-16/)
