@@ -15,3 +15,4 @@
 - [ 영속성 전이 : CASCADE ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-13/)
 - [ JPQL (1) ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-15/)
 - [ JPQL 기본문법과 API ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-16/)
+- [ JPQL (2) ](https://justdojeon.github.io/jpa/JPA-%ED%95%99%EC%8A%B5-17/)
